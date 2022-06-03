@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Kiểm tra số chẵn</title>
+</head>
+<body>
+    <p>Nhập số</p>
+    <input type="number" id="demo" value="">
+    <button onclick="myfunction()">Kiểm tra</button>
+
+    <script>
+        function myfunction() {
+            let demo = document.getElementById('demo').value;
+            
+            if (demo%2 == 0) {
+                alert(demo + ' là số chẵn');
+            } else {
+                alert(demo + ' là số lẻ');
+            }
+        }
+    </script>
+</body>
+</html>
